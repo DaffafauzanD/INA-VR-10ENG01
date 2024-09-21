@@ -39,7 +39,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Scene 4 - 01 - Reading Level 1.unity
     guid: 006701b60db98be44aaad6b5f85def6b
   - enabled: 1
-    path: Assets/Scenes/Scene 4 - 02.unity
+    path: Assets/Scenes/Scene 4 - 02 - Reading Level 2.unity
     guid: b84de31b59e5d1c459675f1300b4fc8a
   - enabled: 1
     path: Assets/Scenes/Scene 4 - 03.unity
