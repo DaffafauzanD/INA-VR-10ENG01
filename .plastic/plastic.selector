@@ -1,0 +1,4 @@
+repository "new-repository@YugaZ@cloud"
+  path "/"
+    br "/main"
+    co "/main"
