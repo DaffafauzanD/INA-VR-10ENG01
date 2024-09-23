@@ -10719,6 +10719,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 979686712828439711, guid: 506a67dfbb476204aa404008f22c21d9, type: 3}
+      propertyPath: m_TargetEye
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2144667024144413764, guid: 506a67dfbb476204aa404008f22c21d9, type: 3}
       propertyPath: m_RequestedTrackingOriginMode
       value: 2
