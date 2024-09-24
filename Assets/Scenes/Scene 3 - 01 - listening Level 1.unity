@@ -1377,8 +1377,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordDropdowns: []
   feedbackText: {fileID: 0}
-  wrongfeedbacktext: {fileID: 0}
-  ShowNextButton: {fileID: 0}
 --- !u!114 &155865044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5338,14 +5336,14 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 646394713}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: MoveToScene
-        m_Mode: 3
+        m_MethodName: ChangeSceneByName
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 8
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Scenes/Scene 3 - 02 - listening Level 2
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &590843863
@@ -10013,14 +10011,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wordDropdowns:
-  - {fileID: 155865046}
-  - {fileID: 1928472060}
-  - {fileID: 476875524}
-  - {fileID: 606787546}
-  - {fileID: 974272489}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   feedbackText: {fileID: 476563160}
-  wrongfeedbacktext: {fileID: 1401051202}
-  ShowNextButton: {fileID: 646394712}
 --- !u!4 &1056941171
 Transform:
   m_ObjectHideFlags: 0

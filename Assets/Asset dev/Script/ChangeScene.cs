@@ -21,6 +21,11 @@ public class ChangeScene : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
         setEyeTargetNone();
     }
+    public void ChangeSceneByName(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
+      
+    }
 
     public void setEyeTargetNone()
     {

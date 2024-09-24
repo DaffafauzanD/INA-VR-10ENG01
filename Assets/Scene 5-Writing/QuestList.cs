@@ -3,15 +3,12 @@ using UnityEngine.UI;
 public class QuestList : MonoBehaviour
 {
     public Toggle[] toggles;
-    public GameObject QuestListsTrue, QuestListsFalse;
     void OnEnable()
     {
         foreach (var item in toggles)
         {
             item.isOn = false;
         }
-         QuestListsTrue.SetActive(false);
-         QuestListsFalse.SetActive(false);
     }
     public void SetUpdate()
     {
@@ -25,6 +22,7 @@ public class QuestList : MonoBehaviour
                 Debug.Log("false answer");
             }
         }
+        Menu.instance.Quizlv2.SetActive(false);
         Menu.instance.NextLevel.SetActive(true);
     }
 }

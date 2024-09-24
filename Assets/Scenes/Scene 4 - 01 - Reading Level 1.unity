@@ -4287,14 +4287,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 565907397}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: MoveToScene
-        m_Mode: 3
+        m_MethodName: ChangeSceneByName
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 11
           m_FloatArgument: 0
-          m_StringArgument: Talking
+          m_StringArgument: Scenes/Scene 4 - 02 - Reading Level 2
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &577718047

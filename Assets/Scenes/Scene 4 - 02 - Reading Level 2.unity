@@ -11198,8 +11198,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordDropdowns: []
   feedbackText: {fileID: 0}
-  wrongfeedbacktext: {fileID: 0}
-  CheckinputButton: {fileID: 0}
 --- !u!114 &862992407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19288,14 +19286,14 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1072218225}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: MoveToScene
-        m_Mode: 3
+        m_MethodName: ChangeSceneByName
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 6
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Scenes/Scene 3 - 01 - Main Menu
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 1072218219}

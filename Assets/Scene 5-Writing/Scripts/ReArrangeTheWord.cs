@@ -10,13 +10,15 @@ public class ReArrangeTheWord : MonoBehaviour
     public TMPro.TMP_Text isToggle;
     void Start()
     {
-        button = GetComponent<Button>();
+        Debug.Log("STARTER");
+        
         isToggle = GetComponentInChildren<TMPro.TMP_Text>(true);
         button.onClick.AddListener(toogleTrue);
     }
 
     void OnEnable()
     {
+        button = GetComponent<Button>();
         toggle = false;
         listString = "";
         button.interactable = true;

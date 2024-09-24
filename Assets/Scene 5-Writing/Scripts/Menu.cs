@@ -5,6 +5,7 @@ public class Menu : MonoBehaviour
     public static Menu instance;
     public AudioSource audioSource;
     [Header("UI")]
+    public GameObject playerVideo;
     public GameObject Quizlv1;
     public GameObject Quizlv2;
     public GameObject NextLevel;
@@ -59,7 +60,7 @@ public class Menu : MonoBehaviour
         audioSource.Stop();
         if(isFinish == false)
         {
-            Quizlv1.SetActive(true);
+            playerVideo.SetActive(true);
         }else
         {
             NextLevel.SetActive(true);

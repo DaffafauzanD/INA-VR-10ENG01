@@ -54,7 +54,7 @@ public class SceneSixLevelOne : MonoBehaviour
         {
             if (cubeMapController.sphere.GetComponent<Renderer>().material.GetTexture("_Tex") == cubeMapController.kelas)
             {
-                //Debug.Log("MATERIAL TEXTURE IS KELAS : " + (cubeMapController.sphere.GetComponent<Renderer>().material.GetTexture("_Tex") == cubeMapController.kelas ? "Kelas" : "none"));
+                Debug.Log("MATERIAL TEXTURE IS KELAS : " + (cubeMapController.sphere.GetComponent<Renderer>().material.GetTexture("_Tex") == cubeMapController.kelas ? "Kelas" : "none"));
                 cubeMapController.sphere.GetComponent<Renderer>().material.SetTexture("_Tex", cubeMapController.koridor);
                 btnSpeaking.SetActive(true);
             }
@@ -107,12 +107,13 @@ public class SceneSixLevelOne : MonoBehaviour
         btnSpeaking.SetActive(false);
         athletes.SetActive(true);
         nextUI.SetActive(true);
-        //btnStart.SetActive(true);
+        btnStart.SetActive(true);
     }
 
     public void StartClicked()
     {
         btnStart.SetActive(false);
+        conversationUI.SetActive(true);
         ChangeAudioInstructor(1);
     }
 
@@ -157,6 +158,7 @@ public class SceneSixLevelOne : MonoBehaviour
         conversationUI.SetActive(false);
         audioConversation.SetActive(true);
         audioInstructor.SetActive(false);
+        recordingUI.SetActive(true);
         audioInstructor.GetComponent<AudioSource>().Stop();
         audioConversation.GetComponent<AudioSource>().Stop();
         audioConversation.GetComponent<AudioSource>().clip = ACConversation[idxConv];
