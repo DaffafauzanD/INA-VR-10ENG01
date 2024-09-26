@@ -3984,7 +3984,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &369479479
 Transform:
   m_ObjectHideFlags: 0
@@ -4010,7 +4010,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 369479478}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 864d561b8ee03604fba12e592f4b9444, type: 3}
+  m_Script: {fileID: 11500000, guid: 092c101bb95c3dc4ab08197de08329c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dropdowns:
@@ -6024,7 +6024,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 369479480}
-        m_TargetAssemblyTypeName: QuizScriptReadingLevel2, Assembly-CSharp
+        m_TargetAssemblyTypeName: QuizManagerLevel2Reading, Assembly-CSharp
         m_MethodName: CheckAnswers
         m_Mode: 1
         m_Arguments:
@@ -11197,7 +11197,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wordDropdowns: []
-  feedbackText: {fileID: 0}
+  ShowWrong: {fileID: 0}
+  ShowCorrect: {fileID: 0}
+  DisplayButtonNext: {fileID: 0}
+  correctPosition: {x: 0, y: 0, z: 0}
+  wrongPosition: {x: 0, y: 0, z: 0}
+  initialCorrectPosition: {x: 0, y: 0, z: 0}
+  initialWrongPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &862992407
 MonoBehaviour:
   m_ObjectHideFlags: 0

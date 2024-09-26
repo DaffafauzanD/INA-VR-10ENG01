@@ -7,13 +7,11 @@ public class DraggableUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 {
     [HideInInspector] public Transform parentAfterDrag;
     [SerializeField] private DraggableUISlotManager slotManager;
-    private Image image;
-    private Canvas canvas;
+    Image image;
 
     private void Awake()
     {
         image = GetComponent<Image>();
-        canvas = GetComponentInParent<Canvas>();
     }
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -23,14 +21,16 @@ public class DraggableUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         transform.SetParent(transform.root);
         transform.SetAsLastSibling();
         image.raycastTarget = false;
+        //GetComponent<CanvasGroup>().blocksRaycasts = false;
     }
 
     public void OnDrag(PointerEventData eventData)
     {
         Debug.Log("Dragging");
-        if (RectTransformUtility.ScreenPointToWorldPointInRectangle(canvas.transform as RectTransform, eventData.position, eventData.pressEventCamera, out Vector3 globalMousePos))
+        if (eventData.pointerCurrentRaycast.isValid)
         {
-            transform.position = globalMousePos;
+            var currentRaycastPosition = eventData.pointerCurrentRaycast.worldPosition;
+            transform.position = currentRaycastPosition;
         }
     }
 
@@ -58,5 +58,6 @@ public class DraggableUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 
         Debug.Log("Dropped on closest slot: " + parentAfterDrag.name);
         image.raycastTarget = true;
+        //GetComponent<CanvasGroup>().blocksRaycasts = true;
     }
 }

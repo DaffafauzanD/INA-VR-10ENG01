@@ -12,11 +12,11 @@ EditorBuildSettings:
     path: Assets/Scenes/SCENE 1-01 Instructional Objectives 1.unity
     guid: 017795803bacdae47af82133e72b217c
   - enabled: 1
-    path: Assets/Scenes/SCENE 1-01 Instructional Objectives 2.unity
-    guid: a24c8fb5400f7f94fb871926a969fd61
-  - enabled: 1
     path: Assets/Scenes/SCENE 1-01 Instructional Objectives Home.unity
     guid: 0adc6f150e5848b4e94f0628274a30df
+  - enabled: 1
+    path: Assets/Scenes/SCENE 1-01 Instructional Objectives 2.unity
+    guid: a24c8fb5400f7f94fb871926a969fd61
   - enabled: 1
     path: Assets/Scenes/SCENE 1-03 LANGUAGE GAMES Level 1.unity
     guid: 433d8ccb35e4a244d956183d06785dbd
@@ -33,11 +33,11 @@ EditorBuildSettings:
     path: Assets/Scenes/SCENE 2-03 LANGUAGE GAMES Level 3.unity
     guid: 99b17988d035b114f83993fdcd5f5b03
   - enabled: 1
-    path: Assets/Scenes/Scene 3 - 01 - listening Level 1.unity
-    guid: 7062d639611dae446a79fee170fd9d20
-  - enabled: 1
     path: Assets/Scenes/Scene 3 - 01 - Main Menu.unity
     guid: bdf6aeb0392add84c9dd20967833a7ec
+  - enabled: 1
+    path: Assets/Scenes/Scene 3 - 01 - listening Level 1.unity
+    guid: 7062d639611dae446a79fee170fd9d20
   - enabled: 1
     path: Assets/Scenes/Scene 3 - 02 - listening Level 2.unity
     guid: a95977e223d0e824b9be6317bcd902e6

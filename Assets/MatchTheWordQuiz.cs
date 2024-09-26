@@ -2,11 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
+using Unity.VisualScripting;
 
 public class MatchTheWordQuiz : MonoBehaviour
 {
     // Dropdowns or other UI elements for selecting meanings for each word
-    public List<Dropdown> wordDropdowns;
+    public List<TMP_Dropdown> wordDropdowns;
+
+    // gameobjects to show if the answer is correct or wrong
+    public GameObject ShowWrong;
+    public GameObject ShowCorrect;
+
+    // Button to display the next question
+    public GameObject DisplayButtonNext;
+
+    // Positions for ShowWrong and ShowCorrect
+    public Vector3 correctPosition;
+    public Vector3 wrongPosition;
+
+    public Vector3 initialCorrectPosition;
+    public Vector3 initialWrongPosition;
 
     // Correct mapping of word indices to meaning indices
     private Dictionary<int, int> correctMatches = new Dictionary<int, int>
@@ -18,8 +34,8 @@ public class MatchTheWordQuiz : MonoBehaviour
         { 4, 4 }  // Occasionally -> sometimes but not often
     };
 
-    // Text to display feedback
-    public Text feedbackText;
+   
+  
 
     // Function to check if the word matches are correct
     public void CheckMatches()
@@ -37,14 +53,27 @@ public class MatchTheWordQuiz : MonoBehaviour
             }
         }
 
-        // Display the result
+        // Display the result and update positions
         if (allCorrect)
         {
-            feedbackText.text = "Success! You've matched all words correctly.";
+            Debug.Log("Success! You've matched all words correctly.");
+            ShowCorrect.transform.position = correctPosition;
+            ShowCorrect.SetActive(true);
+            DisplayButtonNext.SetActive(true);
+            ShowWrong.SetActive(false);
         }
         else
         {
-            feedbackText.text = "Incorrect. Please try again!";
+            Debug.Log("Incorrect. Please try again!");
+            ShowWrong.transform.position = wrongPosition;
+            ShowWrong.SetActive(true);
+            ShowCorrect.SetActive(false);
         }
     }
+    public void ResetPositions()
+    {
+        ShowCorrect.transform.position = initialCorrectPosition;
+        ShowWrong.transform.position = initialWrongPosition;
+    }
 }
+

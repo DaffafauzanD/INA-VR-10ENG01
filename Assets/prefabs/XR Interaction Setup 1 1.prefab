@@ -340,7 +340,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1670256625, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6981544876539690611}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1717954561962503725, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1321463441604654567}
   m_SourcePrefab: {fileID: 100100000, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
 --- !u!114 &756040192753495532 stripped
 MonoBehaviour:
@@ -369,6 +372,39 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
   m_PrefabInstance: {fileID: 5961139312944031687}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5002758172258879978 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1717954561962503725, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+  m_PrefabInstance: {fileID: 5961139312944031687}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1321463441604654567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5002758172258879978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df17e0286efa23e44b45f29716c5b5c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  navMenu: {fileID: 0}
+  vrCamera: {fileID: 5961139313636806837}
+  distance: 2
+  verticalOffset: -1
+  toggleInput:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Toggle Input
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: e38f2ff2-c52a-4e81-8014-0f23582c0301
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -6131295136447488360, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!114 &5402303281708721704 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1748222016861356527, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
